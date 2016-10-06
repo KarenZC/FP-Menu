@@ -12,8 +12,9 @@ import java.util.*;
 public class FPMenu {
     int m;
     float a;
+    m=menu();
     a=CalculaAreas(m);
-    muestraResultado(a);
+    muestraResultado(a,m);
 
     /**
      * @param args the command line arguments
