@@ -22,8 +22,17 @@ public class FPMenu {
         // TODO code application logic here
     }
     
+    public static void muestraResultado(float area){
+        System.out.println("el área es"+ area);
+    }
     public static void muestraResultado (float area, int r){
-        System.out.println("el area del");
+        String figura;
+        if(r==1){ figura= "cuadrado";}
+        else{
+            if(r==2){figura="círculo";}
+        
+        }
+    System.out.println("");
     }
     public static int menu (){
     Scanner entrada= new Scanner(System.in);
