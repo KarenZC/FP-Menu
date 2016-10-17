@@ -23,7 +23,7 @@ public class FPMenu {
     
         /*forma 2 en caso de no querer que en el Resultado aparezca el nombre
         de la figura*/
-        muestraResultado(calculaArea(menu()));
+        muestraResultado(calcularArea(menu()));
     }
     public static void muestraResultado(double area){
         System.out.println("el area es: "+area);
@@ -58,7 +58,7 @@ public class FPMenu {
         return opcion;
     }    
     
-   public static double calculaArea(int opcion){ /*Metodo para eleccion del
+   public static double calcularArea(int opcion){ /*Metodo para eleccion del
         proceso a ejecutar*/
        double area;
         switch (opcion){
@@ -83,7 +83,7 @@ public class FPMenu {
        */
        double area, dato;
        Scanner teclado = new Scanner(System.in);
-       System.out.println("Introduzca la medida del lado");
+       System.out.println("Introduce la medida del lado");
        dato = teclado.nextDouble();
        area=(dato*dato);
        
@@ -95,7 +95,7 @@ public class FPMenu {
        double area;
        double dato;
        Scanner teclado = new Scanner(System.in);
-       System.out.println("Introduzca la medida del radio");
+       System.out.println("Introduce la medida del radio");
        dato = teclado.nextDouble();
        area=Math.pow((dato*Math.PI),2);
       
@@ -106,9 +106,9 @@ public class FPMenu {
        */
        double area, altura, base;
        Scanner teclado = new Scanner(System.in);
-       System.out.println("Introduzca la altura del triangulo");
+       System.out.println("Introduce la altura del triangulo");
        altura=teclado.nextDouble();
-       System.out.println("Introduzca la base del triangulo");
+       System.out.println("Introduce la base del triangulo");
        base=teclado.nextDouble();
        area=(altura*base)/2;
        
